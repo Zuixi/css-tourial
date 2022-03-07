@@ -1,0 +1,80 @@
+html {
+  font-family: 'helvetica neue', Arial, Helvetica, sans-serif;
+}
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid purple;
+}
+
+thead th, tfoot th {
+  font-family: 'Rock-family', cursive;
+}
+
+th {
+  letter-spacing: 2px;
+}
+td {
+  letter-spacing: 1px;
+}
+tbody td {
+  text-align: center;
+}
+
+tfoot th {
+  text-align: right;
+}
+thead th:nth-child(1) {
+  width: 30%;
+}
+
+thead th:nth-child(2) {
+  width: 20%;
+}
+
+thead th:nth-child(3) {
+  width: 15%;
+}
+
+thead th:nth-child(4) {
+  width: 35%;
+}
+
+th, td {
+  padding: 20px;
+}
+
+/* 设置颜色和背景 */
+thead,
+tfoot {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  background: url('../../html/day2/static/leopardskin.jpg');
+}
+
+thead th, tfoot th, tfoot td {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+  border: 3px solid purple;
+}
+
+
+/* 样式化标题 */
+caption {
+  font-family: 'Rock Salt', cursive;
+  padding: 20px;
+  font-style: italic;
+  caption-side: bottom;
+  color: #666;
+  text-align: right;
+  letter-spacing: 1px;
+}
+/* table-layout
+  定义布局表格单元格 行和列的算法
+  fixed 和 auto
+  fixed: 
+    表格和列的宽度通过表格的宽度来设置，某一列的宽度仅由该列首行的单元格决定。
+    在当前列中，该单元格所在行之后的行并不会影响整个列宽。
+  
+  任何一个包含溢出内容的单元格可以使用overflow属性控制是否允许内容溢出, 以及是否滚动
+ */

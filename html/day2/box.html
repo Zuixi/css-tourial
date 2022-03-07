@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>盒模型</title>
+        <style type="text/css">
+            p,
+            ul {
+                border: 2px solid rebeccapurple;
+                padding: .5em;
+            }
+
+            .block,
+            li {
+                border: 2px solid blue;
+                padding: .5em;
+            }
+
+            ul {
+                display: flex;
+                list-style: none;
+            }
+
+            /* span element :default style is inline */
+            .block {
+                display: block;
+            }
+
+            /* box margin samples */
+            .box {
+                background-color: burlywood;
+                margin-top: -40px;
+                margin-right: 30px;
+                margin-bottom: 40px;
+                margin-left: 4em;
+            }
+
+            .margin-box {
+                border: 1px solid rebeccapurple;
+            }
+
+            .one {
+                margin-bottom: 50px;
+            }
+
+            .two {
+                margin-top: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="basic">
+            <h1>不同的box model</h1>
+            <p>一个简单的段落</p>
+            <ul>
+                <li>列表1</li>
+                <li>列表2</li>
+                <li>列表3</li>
+                <li>列表4</li>
+            </ul>
+            <p>another paragraph, some of the <span class="block">words</span> have been wrapped
+            in a <span>span element</span></p>
+        </div>
+        <!-- <div class="box-model">
+            <h2>margin samples</h2>
+            <div class="container">
+                <div class="box">
+                    change my margin!
+                </div>
+            </div>
+        </div> -->
+        <dig class="margin-box">
+            <p class="one">i am paragraph one.</p>
+            <p class="two">i am paragraph two.</p>
+        </dig>
+    </body>
+</html>
